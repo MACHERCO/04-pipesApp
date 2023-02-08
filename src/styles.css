@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+html,body {
+  margin: 10px; /* para separar todo un poco y que no quede tan arriba */
+  background-color: var(--surface-b);
+  font-family:  var(--font-family);
+
+}
+
+
+.text-layout{
+  color: var(--text-color);
+}
