@@ -32,8 +32,7 @@ export class NoComunesComponent {
   clientesMapa = {
 
     '=0 ' : 'No tenemos ningun cliente esperando.',
-    '=1 ' : 'Tenemos 1 oipi esperando.',
-    '=2 ' : 'Tenemos 2 clientes esperando.',
+
     'other': 'tenemos # clientes esperando. '
 
   }
