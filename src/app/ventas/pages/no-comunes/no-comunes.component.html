@@ -12,11 +12,23 @@
 
     <p-fieldset legend="i18Select Pipe" [toggleable]="true">
 
-      Saludos {{'Miguel Ángel'}}, es un placer
-      {{genero | i18nSelect : invitacionMapa}}
-      a nuestro evento.
+      <p>
+          Saludos {{nombre}}, es un placer
+          {{genero | i18nSelect : invitacionMapa}}
+          a nuestro evento.
+     </p>
+
+      <button (click)="cambiarCliente ()"
+              pButton label="Cambiar Nombre"
+              class="p-button-help" >
+
+
+      </button>
+
+
 
     </p-fieldset>
+
 
   </div>
 
@@ -26,7 +38,14 @@
 
          {{clientes.length | i18nPlural : clientesMapa}}
 
+         <button pButton type="button" label="Eliminar Nombre" class="p-button-secondary" >
+
+
+         </button>
+
     </p-fieldset>
+
+
 
   </div>
 

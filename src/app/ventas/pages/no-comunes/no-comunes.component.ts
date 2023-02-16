@@ -9,16 +9,13 @@ import { Component } from '@angular/core';
 export class NoComunesComponent {
 
   //i18nSelect
-
   nombre: string = 'Miguel Ángel';
   genero : string = 'masculino';
 
   /* Creamos un objeto para el MAPPING del Pipe */
 
   invitacionMapa = {
-
     'masculino' : 'invitarlo',
-
     'femenino' : 'invitarla'
 
   }
@@ -35,9 +32,16 @@ export class NoComunesComponent {
     '=1': '1  cliente esperando.',
     'other': '# clientes esperando.'
 
+  }
 
+  cambiarCliente (){
+
+    this.nombre = 'Pilar';
+    this.genero = 'femenino'
 
   }
+
+
 
 }
 
