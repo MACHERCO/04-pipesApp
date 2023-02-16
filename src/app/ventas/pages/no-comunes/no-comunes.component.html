@@ -36,10 +36,15 @@
 
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
 
+        <p>
+
          {{clientes.length | i18nPlural : clientesMapa}}
 
-         <button pButton type="button" label="Eliminar Nombre" class="p-button-secondary" >
+        </p>
 
+         <button (click)="borrarCliente ()"
+                 pButton label="Borrar Nombre"
+                 class="p-button-danger" >
 
          </button>
 
