@@ -8,4 +8,35 @@ import { Component } from '@angular/core';
 })
 export class NoComunesComponent {
 
+  //i18nSelect
+
+  nombre: string = 'Miguel Ángel';
+  genero : string = 'masculino';
+
+  /* Creamos un objeto para el MAPPING del Pipe */
+
+  invitacionMapa = {
+
+    'masculino' : 'invitarlo',
+
+    'femenino' : 'invitarla'
+
+  }
+
+  // i18nPlural
+
+  clientes : string [] = ['Maria'];
+
+  /* Creamos un objeto para el MAPPING del Pipe */
+
+  clientesMapa = {
+
+    '=0 ' : 'No tenemos ningun cliente esperando.',
+    '=1 ' : 'Tenemos 1 oipi esperando.',
+    '=2 ' : 'Tenemos 2 clientes esperando.',
+    'other': 'tenemos # clientes esperando. '
+
+  }
+
 }
+

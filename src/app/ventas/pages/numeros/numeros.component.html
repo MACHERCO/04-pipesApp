@@ -14,11 +14,58 @@
               subheader="Ventas netas año en curso">
 
             <i class="pi pi-euro"></i>
-              {{ventasNetas | number:'1.2-2'}}
+              {{ (ventasNetas + 1000000 ) | number:'1.2-2'}}
+
+              <p> Con el Pipe de number & Ico de €</p>
+
+
+      </p-card>
+
+    </div>
+
+    <div class="col-4">
+
+      <p-card header="Ventas Brutas"
+              subheader="Ventas Brutas año en curso">
+
+            <i class="pi pi-euro"></i>
+              {{ (ventasNetas + 2000000 )| number:'1.2-2'}}
+
+            <p> Con el Pipe de number & Ico de €</p>
+
+      </p-card>
+
+    </div>
+
+    <div class="col-4">
+
+      <p-card header="Ventas Brutas"
+              subheader="Ventas Brutas año en curso">
+
+              {{ (ventasNetas + 2000000 )| currency:"Euros"}}
+
+              <p> Con el Pipe currency para €</p>
 
       </p-card>
 
     </div>
 
 </div>
+
+<div class="grid">
+
+  <div class="col-4">
+
+    <p-card header="Ganancia Porcentual"
+            subheader="Año en curso">
+
+            {{ porcentaje | percent : '2.2-2'}}
+
+    </p-card>
+
+  </div>
+
+</div>
+
+
 
