@@ -25,15 +25,17 @@ export class NoComunesComponent {
 
   // i18nPlural
 
-  clientes : string [] = ['Maria'];
+  clientes : string [] = [];
 
   /* Creamos un objeto para el MAPPING del Pipe */
 
   clientesMapa = {
 
-    '=0 ' : 'No tenemos ningun cliente esperando.',
+    '=0': 'No hay ningun cliente esperando.',
+    '=1': '1  cliente esperando.',
+    'other': '# clientes esperando.'
 
-    'other': 'tenemos # clientes esperando. '
+
 
   }
 
