@@ -22,7 +22,7 @@ export class NoComunesComponent {
 
   // i18nPlural
 
-  clientes : string [] = ['Miguel','Juan','Carolina','Pilar','Jose','Ana',];
+  clientes : string [] = ['Miguel','Juan','Carolina','Pilar','Jose','Ana'];
 
   /* Creamos un objeto para el MAPPING del Pipe */
 
@@ -44,6 +44,17 @@ export class NoComunesComponent {
   borrarCliente (){
 
     this.clientes.pop();
+
+  }
+
+  //keyValue Pipe
+
+  //creamos un objeto
+
+   persona = {
+      nombre : 'Miguel Ángel',
+      edad : 35,
+      direccion : 'Aranjuez, Madrid'
 
   }
 
