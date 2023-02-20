@@ -16,6 +16,8 @@ export class OrdenarComponent {
 
   enMayusculas : boolean = true;
 
+  ordenarPor : string = '';
+
   heroes : Heroe [] = [
 
     {
@@ -54,6 +56,15 @@ export class OrdenarComponent {
   cambiarTipo(): void{
 
     this.enMayusculas = !this.enMayusculas;
+
+  }
+
+  cambiarOrden (valor : string){
+
+    this.ordenarPor = valor;
+
+    console.log(valor)
+
 
   }
 

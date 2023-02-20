@@ -6,13 +6,30 @@ import { Heroe } from '../interfaces/ventas.interface';
 })
 export class OrdenarPipe implements PipeTransform {
 
-  transform ( heroes: Heroe [] ): Heroe[] {
+  transform ( heroes: Heroe [],orderPor : string = 'sin valor' ): Heroe[] {
 
-    console.log(heroes)
+    switch  (orderPor){
 
-    heroes = heroes.sort ( ( a, b) => (a.nombre > b.nombre )? 1 : -1)
+      case 'nombre':
 
-    return heroes;
+        return  heroes = heroes.sort ( ( a, b) => (a.nombre > b.nombre )? 1 : -1)
+
+      case 'vuela':
+
+        return  heroes = heroes.sort ( ( a, b) => (a.vuela > b.vuela )? -1 : 1)
+
+
+        case 'color':
+
+        return  heroes = heroes.sort ( ( a, b) => (a.color > b.color )? 1 : -1)
+
+
+
+      default:
+
+      return heroes;
+    }
+
 
   }
 
